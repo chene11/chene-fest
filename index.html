@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chene Fest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>CHENE FEST</h1>
+        <p id="saludo">Cargando invitación...</p>
+    </header>
+
+    <main>
+
+        <section id="detalles">
+            <h2>Detalles del evento</h2>
+            <p>¡Bienvenidos a Chene Fest! Estamos emocionados de anunciar que estamos regresando a las fiestas con más energía que nunca. Prepárate para disfrutar de música en vivo, deliciosa comida y actividades para toda la familia.</p>
+            <ul>
+                <li><strong>Fecha:</strong> 24 de octubre de 2026</li>
+                <li><strong>Ubicación:</strong> Jalpa de Méndez, Barrio San Luis</li>
+                <li><strong>Qué llevar:</strong> Traje de baño y toalla</li>
+            </ul>
+        </section>
+
+        <section id="actividades">
+            <h3>Actividades</h3>
+            <ul>
+                <li>Alberca</li>
+                <li>Comida</li>
+                <li>Karaoke</li>
+            </ul>
+        </section>
+
+        <section id="cuenta-regresiva">
+            <h2>Cuenta regresiva</h2>
+            <div class="contador">
+                <div class="unidad">
+                    <span id="dias">00</span>
+                    <p>días</p>
+                </div>
+                <div class="unidad">
+                    <span id="horas">00</span>
+                    <p>horas</p>
+                </div>
+                <div class="unidad">
+                    <span id="minutos">00</span>
+                    <p>minutos</p>
+                </div>
+                <div class="unidad">
+                    <span id="segundos">00</span>
+                    <p>segundos</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="confirmacion">
+            <h2>Confirma tu asistencia</h2>
+            <form id="form-rsvp">
+                <fieldset>
+                    <legend>¿Vas a venir?</legend>
+                    <label>
+                        <input type="radio" name="asistencia" value="si" required>
+                        Sí, ahí estaré
+                    </label>
+                    <label>
+                        <input type="radio" name="asistencia" value="no">
+                        No podré ir
+                    </label>
+                </fieldset>
+
+                <div id="bloque-acompanantes">
+                    <label for="acompanantes">¿Cuántos acompañantes llevas?</label>
+                    <input type="number" id="acompanantes" name="acompanantes" min="0" max="4" value="0">
+                    <div id="bloque-nombres"></div>
+                </div>
+
+                <button type="submit">Confirmar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Esta invitación es personal — no la compartas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
