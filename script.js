@@ -1,12 +1,3 @@
-/* ---------- Lista de invitados ---------- */
-const INVITADOS = [
-    { slug: "maria-luisa",    nombre: "María Luisa Aparicio Subiaur" },
-    { slug: "luis-antonio",   nombre: "Luis Antonio Arias Orduño" },
-    { slug: "karla-rubi",     nombre: "Karla Rubí Arellano" },
-    { slug: "luis-ignacio",   nombre: "Luis Ignacio Castillo Mirabal" },
-    { slug: "diego-alexander", nombre: "Diego Alexander Alamilla Gómez" },
-];
-
 /* ---------- Identificar al invitado desde el link ---------- */
 const parametros = new URLSearchParams(window.location.search);
 const slugInvitado = parametros.get('invitado');

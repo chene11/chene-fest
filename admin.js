@@ -1,11 +1,3 @@
-const INVITADOS = [
-    { slug: "maria-luisa",     nombre: "María Luisa Aparicio Subiaur" },
-    { slug: "luis-antonio",    nombre: "Luis Antonio Arias Orduño" },
-    { slug: "karla-rubi",      nombre: "Karla Rubí Arellano" },
-    { slug: "luis-ignacio",    nombre: "Luis Ignacio Castillo Mirabal" },
-    { slug: "diego-alexander", nombre: "Diego Alexander Alamilla Gómez" },
-];
-
 const urlBase = window.location.origin + window.location.pathname.replace('admin.html', 'index.html');
 const contenedor = document.getElementById('lista-invitados');
 
